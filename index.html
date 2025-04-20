@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra tin</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header-container">
+            <div class="header-menu">
+                <button class="btn btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    <i class="bi bi-list list-icon"></i>
+                </button>
+            </div>
+            <div class="header-title">
+                <h3 class="title">Hệ Thống Nhận Diện Tin Độc Hại</h3>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="chat-container">
+                <div class="chat-box" id="chatBox"></div>
+                <div class="input-container">
+                    <textarea id="userInput" class="input-news" placeholder="Nhập tin nhắn..." rows="4"></textarea>
+                    <p id="error-message" class="error-text" style="color: red; display: none;">Vui lòng nhập nội dung tin nhắn!</p>
+                    <button onclick="sendMessage()">Gửi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Chức năng</h1>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="link-function-item">
+                <a href="index.html" class="link-item">Nhập và kiểm tra tin</a>
+            </div>
+            <div class="link-function-item">
+                <a href="view.html" class="link-item">Xem danh sách tin bài đã được xử lý</a>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/css/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
