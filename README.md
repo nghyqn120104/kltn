@@ -1,1 +1,1 @@
-Khóa luận phát hiện tin độc hại
+Khóa luận nghiên cứu giải pháp phát hiện tin độc hại dựa trên phoBERT
